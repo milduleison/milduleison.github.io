@@ -8,6 +8,8 @@
     padding: 100px 0;
     color: #fff;
 }
+
+
     .hero h1 {
         font-size: 39px;
         text-transform: uppercase;
@@ -87,7 +89,64 @@ header a {
     display: block;
 }
 
+.text-center{
+    text-align: center;
+
+}  
+
+.col-3 {
+    width: 24%;
+    display: inline-block;
+}
+
+.col-9 {
+    width: 75%;
+    display: inline-block;
+} 
 
 /*
     Welcome
 */
+.services h1 {
+ font-weight: 400px;
+ margin-top: 80px;
+}
+
+.services h3 {
+ color: #333;
+ font-weight: 400;
+}
+
+
+   .services hr {
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.services  services_text {
+width: 80%;
+margin: 30px auto;
+}
+
+.services p {
+width: 80%;
+margin: 30px auto;
+}
+
+.services ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.services ul li {
+    min-width: 180px;
+}
+
+.fa {
+    font-size: 60px;
+    color: #eee;
+}
+footer {
+
+    
+}
