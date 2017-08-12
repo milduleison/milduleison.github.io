@@ -8,8 +8,6 @@
     padding: 100px 0;
     color: #fff;
 }
-
-
     .hero h1 {
         font-size: 39px;
         text-transform: uppercase;
@@ -20,20 +18,6 @@
         max-width: 50%; 
     }
 
-    .hero button {
-        color: #fff;
-        padding: 10px 20px;
-        background-color: #5bc0de;
-        font-size: 18px;
-        border: 0;
-    }
-    .hero button:hover {
-        background-color: #31b0d5;;
-    }
-    .hero button:active {
-        background-color: #269abc;
-        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-    }
 
 a, header a:hover { text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -89,64 +73,73 @@ header a {
     display: block;
 }
 
-.text-center{
-    text-align: center;
-
-}  
-
-.col-3 {
-    width: 24%;
-    display: inline-block;
-}
-
-.col-9 {
-    width: 75%;
-    display: inline-block;
-} 
 
 /*
-    Welcome
+    Services
 */
 .services h1 {
- font-weight: 400px;
- margin-top: 80px;
+    font-weight: 400;
+    margin-top: 80px;
 }
-
-.services h3 {
- color: #333;
- font-weight: 400;
-}
-
-
-   .services hr {
-    border: 0;
+.services hr {
     border-top: 1px solid #eee;
+    border-bottom: 0;
+}
+.services h3 {
+    color: #333;
+    font-weight: 400;
 }
 
-.services  services_text {
-width: 80%;
-margin: 30px auto;
+.services .services__text {
+    width: 80%;
+    margin: 30px auto;
 }
 
-.services p {
-width: 80%;
-margin: 30px auto;
-}
-
-.services ul{
+.services ul {
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
-.services ul li {
-    min-width: 180px;
+
+/*
+    Get in touch
+*/
+
+.contact__block {
+    margin-top: 30px;
 }
 
-.fa {
-    font-size: 60px;
-    color: #eee;
+    .contact__block button {
+        margin-top: 20px;
+    }
+
+    .contact__block input {
+        padding: 5px;
+    }
+
+    .contact__block select {
+        padding: 5px;
+    }
+
+    .contact__block radio {
+        padding: 5px;
+    }
+
+    .contact__block-text {
+        margin-top: 3px;
+        padding-right: 50px;
+    }
+
+.form-label {
+    display: inline-block;
+    min-width: 100px;
 }
+
+.form-group {
+    margin-bottom: 15px
+}
+
+
 footer {
-
-    
+    min-height: 300px;
 }
