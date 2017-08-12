@@ -12,13 +12,13 @@
 
 <body>
 
-    <header>
+     <header>
         <div class="container">
             <nav>
-                <div class="logo col-3">
+                <div class="logo col col-3">
                     <a href="index.html">Developer</a>
                 </div>
-                <ul class="main-menu col-9">
+                <ul class="main-menu col col-9">
                     <li>
                         <a href="index.html">Home</a>
                     </li>
@@ -28,6 +28,7 @@
                             <li><a href="">Design</a></li>
                             <li><a href="">Test studies</a></li>
                             <li><a href="">Consulting</a></li>
+                            <li><a href="">Programming</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -37,75 +38,133 @@
             <div class="container">
                 <h1>Hi, I'm developer</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat adipisci doloribus necessitatibus ipsam exercitationem mollitia dolor nobis maxime dolorum! Sunt nemo assumenda provident quos sint laborum accusamus nisi cupiditate pariatur.</p>
-                <button>Hire me!</button>
+                <button class="btn-primary">Hire me!</button>
             </div>
         </div>
-    </header>
+    </header> 
 
-    <main class="container text-center">
+    <main class="container">
 
         <div class="services text-center">
-        <h1>What we do</h1>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit rem autem, aliquid quisquam! Laborum illo, similique et vero vel sint dicta blanditiis nihil iste illum aliquid animi asperiores molestiae maxime.</p>
-     <ul >
-         
-         <li class="col-3">
-         <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-         <h3>Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae exercitationem error consectetur, molestiae quam ullam aperiam aut, quod, dicta quas iste. Nulla labore illo tenetur quidem. Doloremque, inventore labore!</p>
-         </li>
-         <li class="col-3">
-         <i class="fa fa-blind" aria-hidden="true"></i>
-         <h3>Test studies</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae exercitationem error consectetur, molestiae quam ullam aperiam aut, quod, dicta quas iste. Nulla labore illo tenetur quidem. Doloremque, inventore labore!</p>
-         </li>
-         <li class="col-3">
-         <i class="fa fa-car" aria-hidden="true"></i></i>
-         <h3>Consulting</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae exercitationem error consectetur, molestiae quam ullam aperiam aut, quod, dicta quas iste. Nulla labore illo tenetur quidem. Doloremque, inventore labore!</p>
-         </li>
-         <li class="col-3">
-         <i class="fa fa-sign-language" aria-hidden="true"></i>
-         <h3>Design</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae exercitationem error consectetur, molestiae quam ullam aperiam aut, quod, dicta quas iste. Nulla labore illo tenetur quidem. Doloremque, inventore labore!</p>
-         </li>
-         </ul>
-         <div class="services text-center contact">
-             <h1>Get in t</h1>
-             <hr>
-             <div>
-             <form action="/contact">
-             <label for="">NAME</label>
-             <input type="text" id="name-field" name="NAME">
-             <button type="submit">pavadinu</button>
-             </div>
-             <div>
-             <form action="/contact">
-             <label for="">SURNAME</label>
-             <input type="text" id="name-field" name="NAME">
-             <button type="submit">SEND</button>
-             </div>
-         <div>
-             <label>
-                 Email:
-                 <input type="email">
-                  <button type="submit">SEND</button>
-             </label>
-         </div>
-        <div>
-           <label>
-                 
-                 <input type="checkbox" name="subscribe">
-                 Get lattes news!
-                  <button type="submit">YES</button>
-             </label> 
+            <h1>What we do</h1>
+            <hr>
+            <p class="services__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ab consectetur, odio quod iure, a, incidunt suscipit magni necessitatibus sapiente aperiam recusandae officia cupiditate officiis quia laudantium autem dolores. Iste!
+            </p>
+            <ul>
+                <li class="col col-3">
+                    <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                    <h3>Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </li>
+                <li class="col col-3">
+                    <i class="fa fa-coffee" aria-hidden="true"></i>
+                    <h3>Test studies</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </li>
+                <li class="col col-3">
+                    <i class="fa fa-exchange" aria-hidden="true"></i>
+                    <h3>Consulting</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </li>
+                <li class="col col-3">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <h3>Programming</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                </li>
+            </ul>
         </div>
-         </div>
+
+        <div class="services contact">
+            <h1 class="text-center">Get in touch</h1>
+            <hr>
+
+            <div class="contact__block">
+                <div class="col col-6">
+                    <p class="contact__block-text">
+                        Please fill in some details and I will get back to you ASAP as possible.
+                    </p>
+                </div>
+
+                <div class="col col-6">
+                    <form action="contact">
+                        
+                        <div class="form-group">
+                            <label>
+                                <span class="form-label">Name:</span>
+                                <input type="text" name="name">
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <span class="form-label">Surname:</span>
+                                <input type="text" name="surname">
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <span class="form-label">Email:</span>
+                                <input type="email" name="Email">
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                                <label class="m-right-10">
+                                     <input type="radio" name="gender" value="Male">
+                                     Male
+                                </label>
+                                <label class="m-right-10">      
+                                        <input type="radio" name="gender" value="Female">
+                                        Female
+                                </label>
+                                 <label class="m-right-10">
+                                        <input type="radio" name="gender" value="Other">
+                                        Other
+                                </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <span class="form-label">Country:</span>
+                                <select name="country">
+                                    <option value="lt">Lithuania</option>
+                                    <option value="lv">Latvia</option>
+                                    <option value="ee">Estonia</option>
+                                    <option value="pl">Poland</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <textarea name="notes" rows="3" placeholder="Your comments"></textarea>
+
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="Subscribe" value="true">
+                                Get latest news
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn-primary">Send</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
         </div>
+
+
     </main>
+
     <footer></footer>
 
 </body>
 
 </html>
+Add Comment Collapse
+
+
+
