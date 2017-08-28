@@ -128,7 +128,7 @@ code = cityArray[0]
 city = cityArray[1]
 console.log("Miestas yra", city, "Kodas:", code);*/
 
-let cityRow = "VLN-Vilnius";
+/*let cityRow = "VLN-Vilnius";
 let code;
 let city;
 
@@ -144,12 +144,92 @@ if (arVilnius !== -1) {
     arVilnius = "NE";
 
     }
-console.log(`ar miestas yra Vilnius: ${arVilnius}` );
+console.log(`ar miestas yra Vilnius: ${arVilnius}` );*/
+
+let miestai =  ["Kaunas", "Vilnius", "Alytus", "Klaipeda"];
+
+// Suzinoti, kiek yra miestu
+
+document.write("miestu skaicius", miestai.length);
+//pridekime nauja miesta
+
+miestai.push("ukmerge");
+
+//Pridekime kelis miestus
+
+miestai.push("Palanga", "Panevezys");
+
+//ismeskime pirma miesta bei ji issisaugokime i kintamaji pirmasmiesta "kaunas"
+
+let pirmasmiestas = miestai.shift();
+
+//Kaip sudinoti ar pirmas miestas yra Ukmerge
+if(miestai[0] === "Ukmerge"){
+    document.write("Pirmas miestas - Ukmerge");
+}
+else {
+    document.write(miestai[0]);
+}
+// join(",");
+//Ar tarp miestu yra miestas Kaunas  indexOf           
+
+
+if (miestai.indexOf("Kaunas") >= 0) {
+ document.write("Kaunas yra tarp isvardintu miestu");
+} else {
+ document.write("Tarp miestu Kauno nera");
+}
+
+//Atspausdinti masyve esancius elementus
+document.write(miestai)
+//Atspausdina stulpeliu
+document.write("<br>")
+
+//atspausdinti kaip ol arba ul(li) i html (SARASA)
+/*document.write("<ol>")
+document.write("<li>" + miestai[0] + "</li>");
+document.write("<li>" + miestai[1] + "</li>");
+document.write("<li>" + miestai[2] + "</li>");
+document.write("<li>" + miestai[3] + "</li>");
+document.write("<li>" + miestai[4] + "</li>");
+document.write("<li>" + miestai[5] + "</li>");
+document.write("</ol>");
 
 
 
+// miestai.length nurodo, kad atspausdinti visus kiek yra, jei norim maziau i<6 
+document.write("<ol>");*/
+/*document.write("<ol>");
+for (let i = 0; i < miestai.length; i++){
+document.write("<li>" + miestai[i] + "</li>");
+}
+document.write("</ol>");
+
+//Naudojam while
+
+document.write("<ul>");
+let l = 0;
+while (l < miestai.length) {
+document.write("<li>" + miestai[l] + "</li>");
+l++; 
+}
+document.write("</ul>");*/
+
+//paklauiam skaiciaus, kai iveda skaiciu, ji issaugome i masyva
+//jei skaiciaus ne ivede, arba ivede ne skaiciu nutraukiamas ivedimas ir spausdinamas rezultatas
 
 
+let skaiciumasyvas = [];
+while (true) {
+    let input = prompt("Koks tau skaicius patinka???");
+    let skaicius = parseFloat(input); //tai ka zmogus ivede padare skaiciumi
+    if(!isNaN(skaicius)){
+      skaiciumasyvas.push(skaicius);
+    } else {
+        break;
+    }
+
+}
 
 
 
