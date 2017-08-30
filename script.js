@@ -219,7 +219,7 @@ document.write("</ul>");*/
 //jei skaiciaus ne ivede, arba ivede ne skaiciu nutraukiamas ivedimas ir spausdinamas rezultatas
 
 
-let skaiciumasyvas = [];
+/*let skaiciumasyvas = [];
 while (true) {
     let input = prompt("Koks tau skaicius patinka???");
     let skaicius = parseFloat(input); //tai ka zmogus ivede padare skaiciumi
@@ -229,7 +229,83 @@ while (true) {
         break;
     }
 
+}*/
+
+// Objektai
+
+let obj = {
+    vardas: "Tomas",
+    pavarde: "Stasylas",
+    amzius: "29"
+};
+
+//Idedam i objekta
+
+
+
+// let zmogus = {vardas: "Tomas"} //kuriant objekta reikia nepamirsti keblelio(,)
+// zmogus = {vardas: "Tomas"}
+
+// zmogus.vardas //iskvieciam pagal rakta(vardas)
+// "Tomas"
+// zmogus.pavarde = "Ponas" //sukuriam nauja reiksme, kuria automatu patalpina i objekta
+// zmogus
+// {vardas: "Tomas", pavarde: "Ponas"}
+
+//istrinimui naudojam delete
+
+let gyventojas = {
+vardas: "Jonikas",
+pavarde: "Stasylas",
+amzius: "56",
+pomegis: "Zvejyba"
 }
 
+delete gyventojas.amzius  //istrinam
+ 
+  //shel copy
+var arr1 = [1, 2, 3, 4, 5,];
+var arr2 = arr1;
+arr1===arr2 ///true
+
+arr1 = 10;
+arr2; // [1, 2, 3, 4, 5];
 
 
+//Funkcija
+
+/*let a = 10;
+let b = 20;
+let suma = a + b;
+console.log("Suma yra", suma);*/
+
+
+/*let a = 10;
+let b = 20;
+function sudekSkaicius(skaiciusA, skaiciusB){
+    let suma = skaiciusA + skaiciusB;
+    console.log("Suma yra", suma);
+    return suma;
+}
+
+//iskvieciam funkcija
+//sudekSkaicius(a,b);
+sudekSkaicius(10,60);
+
+function getgreeting(name){
+    return "Welcom back" + name +"!";
+}
+
+let personName = "Tomas";
+let getgreeting = personName
+document.write(getgreeting(personNam));*/
+
+
+let salys = ["Lietuva", "Latvija", "Vokietija", "Belgija"];
+function lastItem(salys){
+    let index = salys.length -1;
+    let salis = salys[index];
+    return salis;
+}
+let paskutineSalis = lastItem(salys);
+console.log(paskutineSalis);
