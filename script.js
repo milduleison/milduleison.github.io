@@ -1,4 +1,4 @@
-//console.log("labas!");
+
 
 //eilutes komentaras
 
@@ -146,7 +146,7 @@ if (arVilnius !== -1) {
     }
 console.log(`ar miestas yra Vilnius: ${arVilnius}` );*/
 
-let miestai =  ["Kaunas", "Vilnius", "Alytus", "Klaipeda"];
+/*let miestai =  ["Kaunas", "Vilnius", "Alytus", "Klaipeda"];
 
 // Suzinoti, kiek yra miestu
 
@@ -233,7 +233,7 @@ while (true) {
 
 // Objektai
 
-let obj = {
+/*let obj = {
     vardas: "Tomas",
     pavarde: "Stasylas",
     amzius: "29"
@@ -301,11 +301,65 @@ let getgreeting = personName
 document.write(getgreeting(personNam));*/
 
 
-let salys = ["Lietuva", "Latvija", "Vokietija", "Belgija"];
+/*let salys = ["Lietuva", "Latvija", "Vokietija", "Belgija"];
 function lastItem(salys){
     let index = salys.length -1;
     let salis = salys[index];
     return salis;
 }
 let paskutineSalis = lastItem(salys);
-console.log(paskutineSalis);
+console.log(paskutineSalis);  */
+
+
+//JSON i index.html isikeliam <script src="JSON.js"></script> i dirba. script.js(is viso 3failai)
+
+// let females = [];
+// for (let i = 0; i < json.length; i++) {
+//     let x = json[i];
+
+//     if (isFemale(x)) {
+//         females.push(x);
+
+//     }
+
+// }
+
+// //funkcija kuri isrenka moteris
+// function isFemale(person) {
+//     return person.gender === "Female";
+// }
+
+// function test() {
+//     return true
+// }
+
+//filtravimas su filter (visos moterys)
+
+females = json.filter(function(person){
+    return person.gender === "Female" //true arba folse
+});
+
+// filtruojam vyrus is Kinijos
+let males = json.filter(function(person){
+    return person.gender === "Male" &&  person.country === "China" //true arba folse
+});
+
+//filtruojam moteris is Kinijos
+let femalesChina = json.filter(function(person){
+    return person.gender === "Female" &&  person.country === "China" //true arba folse
+});
+
+
+// kiek vyru tenka kelios moterys
+function vyraimoterys(a, b) {
+    if(!a || !b) return;
+   return (a / b).toFixed(2);
+}
+console.log(vyraimoterys(femalesChina.length, males.length))
+
+//Sort (sugrupuosim) pavadinimas compare. 1 reiskia sukeisti, -1 palikti toje pacioje vietoje.
+
+let femalesChinasorted = femalesChina.sort(function(a, b){
+  if (a.first_name > b.first_name) return 1;
+  return -1;
+})
